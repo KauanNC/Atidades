@@ -40,11 +40,11 @@ Inicio
    se (media >= 7) entao
       escreval ("voce esta aprovado")
    fimse
-   se (media = 5)entao
+   se (media >= 5) e (media < 7) entao
       escreval ("voce esta em recuperação")
-   senao
-      se (media <= 4) entao
+   fimse
+      se (media < 5) entao
          escreval ("voce esta reprovado")
       fimse
-   fimse
+
 Fimalgoritmo
