@@ -1,8 +1,10 @@
 Algoritmo "Função ENQUANTO"
+//  
+//  
 //
 //
 // Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Kauan Nascimenot
+// Autor(a)    : Kauan Nascimento
 // Data atual  : 14/09/2023
 Var
    // Seção de Declarações das variáveis
@@ -17,7 +19,7 @@ Inicio
    //nota entre 0 a 10
 
    para i de 1 ate 2 passo 1 faca
-      escreval ("Informe a nota do aluno:")
+      escreval ("Informe a" , i, "° nota do aluno: ")
       leia (nota)
       limpatela
 
@@ -25,15 +27,27 @@ Inicio
          escreval ("Nota informada é inválida!")
          escreval ("Digite novamente")
          escreval ("")
-         escreval ("Digite uma nota para o aluno: ")
+         escreval ("Digite a" , i, "º nota para o aluno: ")
          leia (nota)
-         fimenquanto
-         
-         soma  <- soma + nota
-         media <- soma / 2
-      fimpara
+      fimenquanto
 
-      escreval ("soma: " , soma)
-      escreval ("media: " , media)
+      soma  <- soma + nota
+      media <- soma / 2
+
+   fimpara
+
+   escreval ("soma: " , soma)
+   escreval ("media: " , media)
+
+   se (media >= 7) entao
+      escreval ("voce esta aprovado")
+   fimse
+   se (media >= 5) e (media < 7) entao
+      escreval ("voce esta em recuperação")
+   fimse
+      se (media < 5) entao
+         escreval ("voce esta reprovado")
+      fimse
+
 
 Fimalgoritmo
